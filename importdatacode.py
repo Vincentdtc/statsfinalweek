@@ -1,6 +1,13 @@
 import os
+import site
+import sys
+
 import pandas as pd
 import requests
+
+print("Python executable:", sys.executable)
+print("Python version:", sys.version)
+print("Site packages:", site.getsitepackages())
 
 # URL of the Palmer Penguins dataset CSV
 url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv"
